@@ -26,7 +26,7 @@ public class Note {
         return duration;
     }
 
-    public void setDuration() {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 

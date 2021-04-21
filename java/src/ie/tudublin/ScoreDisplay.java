@@ -11,6 +11,10 @@ public class ScoreDisplay extends PApplet {
 
 	ArrayList<Note> note = new ArrayList<Note>();
 
+	public void loadScore() {
+
+	}
+
 	public void settings() {
 		size(1000, 500);
 

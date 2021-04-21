@@ -14,6 +14,15 @@ public class ScoreDisplay extends PApplet {
 	public void loadScore() {
 		for (int i = 0; i < score.length(); i++) {
 			String s = score.substring(i, i + 1);
+
+			int ind = score.indexOf(s);
+			char ch = score.charAt(ind);
+
+			if (score.isDigit(ch) == true) {
+
+				int j = s - '0';
+			}
+
 			System.out.println(s);
 		}
 	}

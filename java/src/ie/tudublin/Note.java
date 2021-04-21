@@ -2,12 +2,17 @@ package ie.tudublin;
 
 public class Note {
 
-    Note() {
+    private char note;
+    private int duration;
+    private String name;
+
+    public Note(String name) {
 
     }
 
-    private char note;
-    private int duration;
+    public String toString() {
+        return name = note + " " + duration;
+    }
 
     public char getNote() {
         return note;

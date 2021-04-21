@@ -16,11 +16,14 @@ public class ScoreDisplay extends PApplet {
 			String s = score.substring(i, i + 1);
 
 			int ind = score.indexOf(s);
+
+			// converting the substring to a character
 			char ch = score.charAt(ind);
 
-			if (score.isDigit(ch) == true) {
+			// checking is the character is a digit or not
+			if (Character.isDigit(ch) == true) {
 
-				int j = s - '0';
+				int j = ch - '0';
 			}
 
 			System.out.println(s);

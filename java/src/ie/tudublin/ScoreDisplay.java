@@ -12,7 +12,10 @@ public class ScoreDisplay extends PApplet {
 	ArrayList<Note> note = new ArrayList<Note>();
 
 	public void loadScore() {
-
+		for (int i = 0; i < score.length(); i++) {
+			String s = score.substring(i, i + 1);
+			System.out.println(s);
+		}
 	}
 
 	public void settings() {
@@ -25,7 +28,7 @@ public class ScoreDisplay extends PApplet {
 	}
 
 	public void setup() {
-
+		loadScore();
 	}
 
 	public void draw() {

@@ -32,7 +32,7 @@ public class ScoreDisplay extends PApplet {
 					int num = ch - '0';
 					hold = 0;
 				} else if (Character.isDigit(ch) == false && hold != 0) {
-					note.add(hold, 1);
+					// note.add();
 				} else {
 
 				}
@@ -57,6 +57,13 @@ public class ScoreDisplay extends PApplet {
 
 	public void draw() {
 		background(255);
+
+		stroke(0);
+		strokeWeight(5);
+
+		for (int i = 250; i < 500; i += 50) {
+			line(100, i, 1000, i);
+		}
 
 	}
 
